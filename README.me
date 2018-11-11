@@ -1,0 +1,38 @@
+Readme
+
+Wink is a hackathon project that we developed for Bostonhack 2018.
+inspiration: 
+The team members were at a house party where there was quite a few people
+and we were trying to take a group photo. However, there was alot of issues
+with waiting for a timed camera, the camera going off when someone was
+blinking and we would have to retake the picture multiple times. 
+
+What is wink?
+Wink is a python script that uses OpenCV and Dlib facial feature detectors
+to detect all the faces in a camera feed. It then measures to check if all
+of the eyes are open and not blinking. When the program goes a few frames
+without detecting a blink it will save the frame as a picture.
+Thus reducing the possibility of someone having their eyes closed in a picture.
+
+Limitations and Future possibilities:
+Our UI definitely needs alot more work as it is very simple. 
+We had trouble packaging python script as APK as we also had to figure out
+how to get the APK to have all our dependencies.
+Since we were not able to package this, we were unable to test it on a mobile
+device and we suspect that there might be hardware limitations on mobile
+platforms.
+
+Dependencies:
+OpenCV/CV2
+Kivy
+Dlib
+
+
+How to use: 
+We included a script to install all of Wink's dependencies and prerequisites
+as such, all that is needed is to run the command :
+./script.sh
+in your command line.
+Alternatively,  if you do not need to install the dependencies this command should suffice.:
+python wink.py
+ 
